@@ -47,7 +47,7 @@ const HomeProjects = () => {
             {cities.map((city) => (
             <div
                 key={city.id}
-                class="card card-compact w-96 bg-base-100 shadow-xl"
+                class="bg-base-100 shadow-xl p-3 rounded-md border-2 border-purple-300"
             >
                 <figure>
                     <img className="w-[400px] h-[300px]" src={city.img} alt={city.bed} />
@@ -56,7 +56,7 @@ const HomeProjects = () => {
                     <h2 class="text-xl font-bold">{city.city}</h2>
                     <p>{city.totalProperty.length} properties</p>
                 <div class="card-actions justify-center">
-                    <button class="btn btn-primary">procced to booking</button>
+                    <button className="bg-purple-500 rounded-md px-2 py-1">see properties</button>
                 </div>
                 </div>
             </div>
